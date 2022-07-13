@@ -1,4 +1,4 @@
-function(add_nano_module NAME)
+function(nano_add_module NAME)
   include(FetchContent)
   FetchContent_Declare(
     ${NAME}
