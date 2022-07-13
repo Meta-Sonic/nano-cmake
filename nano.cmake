@@ -6,7 +6,7 @@ function(nano_add_module NAME)
     GIT_TAG master
   )
 
-  FetchContent_MakeAvailable(${NAME})
+  FetchContent_MakeAvailable(nano-${NAME})
 endfunction()
 
 function(nano_clang_format NAME SOURCES)
