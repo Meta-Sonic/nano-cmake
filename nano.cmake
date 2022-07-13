@@ -41,7 +41,7 @@ function(nano_create_module NAME)
     endif()
 
     if (OPT_BUILD_TESTS)
-        nano_add_module(nano-test)
+        nano_add_module(test)
 
         file(GLOB_RECURSE TEST_SOURCE_FILES
             "${CMAKE_CURRENT_SOURCE_DIR}/tests/*.cpp"
