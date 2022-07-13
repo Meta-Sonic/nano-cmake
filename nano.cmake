@@ -1,8 +1,8 @@
 function(nano_add_module NAME)
   include(FetchContent)
   FetchContent_Declare(
-    ${NAME}
-    GIT_REPOSITORY "https://github.com/Meta-Sonic/${NAME}.git"
+    nano-${NAME}
+    GIT_REPOSITORY "https://github.com/Meta-Sonic/nano-${NAME}.git"
     GIT_TAG master
   )
 
