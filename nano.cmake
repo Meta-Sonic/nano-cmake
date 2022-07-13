@@ -52,7 +52,7 @@ function(nano_create_module NAME)
         set(TEST_NAME nano-${NAME}-tests)
         add_executable(${TEST_NAME} ${TEST_SOURCE_FILES})
         target_include_directories(${TEST_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/tests")
-        target_link_libraries(${TEST_NAME} PUBLIC nano::test nano::geometry)
+        target_link_libraries(${TEST_NAME} PUBLIC nano::test ${MODULE_NAME})
 
         set(CLANG_OPTIONS -Weverything -Wno-c++98-compat)
         set(MSVC_OPTIONS /W4)
